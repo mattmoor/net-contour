@@ -7,8 +7,8 @@ require (
 	github.com/mikefarah/yq/v3 v3.0.0-20200601230220-721dd57ed41b
 	github.com/projectcontour/contour v1.4.1-0.20200507033955-65d52b253570
 	gopkg.in/yaml.v2 v2.2.8
-	k8s.io/api v0.18.1
-	k8s.io/apimachinery v0.18.1
+	k8s.io/api v0.18.2
+	k8s.io/apimachinery v0.18.2
 	k8s.io/client-go v11.0.1-0.20190805182717-6502b5e7b1b5+incompatible
 	knative.dev/networking v0.0.0-20200611155523-bd13675bcf70
 	knative.dev/pkg v0.0.0-20200616011124-086ff4395641
@@ -17,6 +17,8 @@ require (
 )
 
 replace (
+	// TODO(mattmoor): DO NOT SUBMIT
+	github.com/projectcontour/contour => github.com/stevesloka/contour v0.13.0-beta.2.0.20200622143240-715aab4e4b1a
 	k8s.io/api => k8s.io/api v0.17.6
 	k8s.io/apimachinery => k8s.io/apimachinery v0.17.6
 	k8s.io/client-go => k8s.io/client-go v0.17.6

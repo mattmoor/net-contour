@@ -34,5 +34,6 @@ import (
 
 	_ "github.com/mikefarah/yq/v3"
 	_ "github.com/projectcontour/contour/cmd/contour"
-	_ "github.com/projectcontour/contour/examples/contour"
+	// TODO(mattmoor): DO NOT SUBMIT
+	// _ "github.com/projectcontour/contour/examples/contour"
 )
