@@ -102,11 +102,12 @@ function privatize_loadbalancer() {
     | sed "s@externalTrafficPolicy: Local@# externalTrafficPolicy: Local@g"
 }
 
-# TODO(mattmoor): DO NOT SUBMIT
-# rm -rf config/contour/*
+#TODO(mattmoor): DO NOT SUBMIT
+#rm -rf config/contour/*
 
-# # Apply patch to contour
-# git apply ${ROOT_DIR}/hack/contour.patch
+# Apply patch to contour
+#git apply ${ROOT_DIR}/hack/contour.patch
+git apply ${ROOT_DIR}/hack/contour-client.patch
 
 # # We do this manually because it's challenging to rewrite
 # # the ClusterRoleBinding without collateral damage.
